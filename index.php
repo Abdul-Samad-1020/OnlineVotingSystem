@@ -28,28 +28,36 @@
                 <?php
                     if(isset($_GET['sign-up'])){
                     ?>
-                    <div class="d-flex justify-content-center form_container">
-					<form>
+                    <div class="d-flex justify-content-center form_container " style="color:grey;" >
+					<form method ='POST'>
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="su_username" class="form-control input_user" value="" placeholder="username">
+							<input type="text" name="su_username" class="form-control input_user"  placeholder="username" required />
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+							<input type="number" name="su_contact_no" class="form-control input_pass"  placeholder="Contact Number" required />
 						</div>
-						<div class="form-group">
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customControlInline">
-								<label class="custom-control-label" for="customControlInline">Remember me</label>
+						
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
+							<input type="number" name="su_contact_no" class="form-control input_pass"  placeholder="Contact Number" required />
 						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" name="su_repassword" class="form-control input_pass"  placeholder="Retype-Password" required />
+						</div>
+						
 							<div class="d-flex justify-content-center mt-3 login_container">
-				 	<button type="button" name="button" class="btn login_btn">Login</button>
+				 	<button type="submit" name="signup" class="btn login_btn">Sign UP</button>
 				   </div>
 					</form>
 				</div>
@@ -58,9 +66,7 @@
 					<div class="d-flex justify-content-center links">
 						Already Have Account? <a href="index.php" class="ml-2">Sign In</a>
 					</div>
-					<div class="d-flex justify-content-center links">
-						<a href="#">Forgot your password?</a>
-					</div>
+					
 				</div>
                     <?php
                     
@@ -116,3 +122,4 @@
     <script src="assets/js/jquery.min.js"></script>
 </body>
 </html>
+<!-- <!   -                  - 29:49                         --> -->
